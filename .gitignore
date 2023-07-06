@@ -6,3 +6,4 @@ manage.py
 src_md
 src_st
 src_data
+db.sqlite3
