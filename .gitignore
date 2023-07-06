@@ -1,0 +1,8 @@
+Dockerfile
+entrypoint.sh
+.DS_Store
+.env
+manage.py
+src_md
+src_st
+src_data
