@@ -1,0 +1,9 @@
+
+
+docker-compose exec django_gunicorn1 python3 manage.py makemigrations
+docker-compose exec django_gunicorn1 python3 manage.py migrate
+python3 manage.py createsuperuser \
+         --noinput \
+         --username os.environ.get('DJANGO_SUPERUSER_USERNAME') \
+         --email os.environ.get('DJANGO_SUPERUSER_EMAIL') \
+         --password os.environ.get('DJANGO_SUPERUSER_PASSWORD')
