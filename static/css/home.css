@@ -5,17 +5,14 @@ body {
 }
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
+
 .bg-1 { 
   background-color: #1abc9c; /* Green */
   color: #ffffff;
 }
-.bg-2 { 
-  background-color: #474e5d; /* Dark Blue */
-  color: #ffffff;
-}
 .bg-3 { 
-  background-color: #ffffff; /* White */
-  color: #555555;
+  background-color: #bca1a1; /* White */
+  color: #000000;
 }
 .bg-4 { 
   background-color: #2f2f2f; /* Black Gray */
@@ -33,12 +30,28 @@ p {font-size: 16px;}
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
+  animation-name: nav_bar;
+  animation-duration: 8s;
 }
 .navbar-nav  li a:hover {
   color: #1abc9c !important;
 }
 
-.testy {
-  color:red;
-  background-color: aquamarine;
+
+
+/* The animation code */
+@keyframes nav_bar {
+  from {background-color:rgb(25, 188, 156);}
+  to {background-color:rgb(248, 248, 248);}
+}
+
+@keyframes example {
+  0%   {background-color: red;
+        color:#f5f6f7;}
+  25%  {background-color: yellow;
+        color:#2f2f2f;}
+  50%  {background-color: blue;
+        color:#ffffff;}
+  100% {background-color: green;
+        color:#fff;}
 }
