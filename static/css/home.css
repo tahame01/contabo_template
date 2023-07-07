@@ -37,3 +37,8 @@ p {font-size: 16px;}
 .navbar-nav  li a:hover {
   color: #1abc9c !important;
 }
+
+.testy {
+  color:red;
+  background-color: aquamarine;
+}
