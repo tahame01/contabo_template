@@ -1,7 +1,7 @@
+# remember before commit CSRF_TRUSTED_ORIGINS
 
-
-docker-compose exec django_gunicorn1 python3 manage.py makemigrations
-docker-compose exec django_gunicorn1 python3 manage.py migrate
+docker-compose exec app python3 manage.py makemigrations
+docker-compose exec app python3 manage.py migrate
 python3 manage.py createsuperuser \
          --noinput \
          --username os.environ.get('DJANGO_SUPERUSER_USERNAME') \

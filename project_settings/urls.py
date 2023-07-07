@@ -9,4 +9,7 @@ urlpatterns = [
     # path("users/", include("users.urls")),
     path("",views.main,name="main"),
     path("test/",views.test,name="test"),
+    path("afra/",views.afra,name="afra"),
+    path("dessert/",views.dessert,name="dessert"),
+    path("ba_properties/",views.ba_properties,name="ba_properties"),
 ]
