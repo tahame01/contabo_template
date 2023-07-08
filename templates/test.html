@@ -4,48 +4,104 @@
 
 
 {%  block content  %}  
-<div class="container p-5 text-center bg-image"
-     style=
-     "
-            background-image: url('/static/images/root.png');
-            height: 800px;
-     "
->
-    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-white">
-            <h1 class="mb-3">Tangir.xyz</h1>
-            <h4 class="mb-3">portfolio</h4>
-            <a class="btn btn-outline-light btn-lg" href="#!" role="button"
-            >test</a
-            >
-          </div>
-        </div>
-      </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="{% static 'css/home.css' %}" rel="stylesheet">
+
+  <!-- STYLE  -->
+  <style>
+.bg-1{
+  background-color: rgb(0, 98, 255);
+  color: white;
+}
+.margin {
+  margin-bottom: 20px;
+}
+
+  </style>
+
+    <!-- STYLE  -->
+</head>
+
+
+<body>
+
+<!-- Navbar -->
+<!-- <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Me</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="{% static 'images/paris.webp' %}" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>I'm an adventurer</h3>
 </div>
 
 
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="col-md-12 " >
-        
-      </div>
-  
-      <div class="bg-dark col-sm-6" style="height: 400px; width:400px;">
-       
-      </div>
-  
-      <div class="bg-info col-sm-6"style="height: 400px; width:400px;" >
-  
-      </div>
+
+
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
+</div>
 
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+</footer>
 
-
-
-
-
-
-
+<script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
 
 {%  endblock  %}

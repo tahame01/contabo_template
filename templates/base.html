@@ -22,9 +22,9 @@
 
   <body>
 
-<div class="container-xxl">
+<!-- <div class="container-xxl">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-fixed-top scrolling-navbar">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -44,11 +44,16 @@
       </div>
     </div>
   </nav>
-</div>
+</div> -->
 
 
   <div class="container-fluid">
-      {%  block content  %}  {%  endblock  %}
+    <a href="{% url 'test' %}">TEST</a>
+    <a href="{% url 'afra' %}">AFRA</a>
+    <a href="{% url 'main' %}">MAIN</a>
+      {%  block content  %} 
+      
+      {%  endblock  %}
   </div>
 
 
