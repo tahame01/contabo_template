@@ -15,3 +15,10 @@ def dessert(request):
 
 def ba_properties(request):
     return render(request,"ba_properties.html")
+
+
+def gt(request):
+    return render(request,"gt.html")
+
+def robtech(request):
+    return render(request,"robtech.html")

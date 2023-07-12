@@ -11,5 +11,7 @@ urlpatterns = [
     path("test/",views.test,name="test"),
     path("afra/",views.afra,name="afra"),
     path("dessert/",views.dessert,name="dessert"),
+    path("gt/",views.gt,name="gt"),
+    path("robtech/",views.robtech,name="robtech"),
     path("ba_properties/",views.ba_properties,name="ba_properties"),
 ]
