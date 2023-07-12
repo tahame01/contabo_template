@@ -22,3 +22,9 @@ def gt(request):
 
 def robtech(request):
     return render(request,"robtech.html")
+
+def demo1(request):
+    return render(request,"demo1.html")
+
+def demo2(request):
+    return render(request,"demo2.html")
